@@ -1,0 +1,22 @@
+<h1> CREATE A NEW EVENT </h1>
+<form [formGroup]="eventtForm"(ngSubmit)="add()">
+  <table>
+    <tr>
+      <td> EVENT NAME: </td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>EVENT CONTENTS:</td>
+      <td><input type="text" formControlName="detail"></td>
+    </tr>
+    <tr>
+      <td>TIME</td>
+      <td><input type="datetime-local" formControlName="time"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button >CREATE NEW</button></td>
+    </tr>
+  </table>
+</form>
+
