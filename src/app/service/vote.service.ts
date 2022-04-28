@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Vote} from "./vote";
+import {Vote} from "../model/Vote";
 const API_URL = 'http://localhost:8080/api/vote';
 
 @Injectable({

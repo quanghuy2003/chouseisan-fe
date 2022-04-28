@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Eventt} from "./eventt";
+import {Eventt} from "../model/Eventt";
 
 const API_URL = 'http://localhost:8080/api/event';
 

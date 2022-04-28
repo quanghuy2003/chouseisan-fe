@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {FindAllEventComponent} from "./find-all-event/find-all-event.component";
-import {AddComponent} from "./add/add.component";
+import {FindAllEventComponent} from "./compoment/find-all-event/find-all-event.component";
+import {AddComponent} from "./compoment/add/add.component";
 
 const routes: Routes = [
   {

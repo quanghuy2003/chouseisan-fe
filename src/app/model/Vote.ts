@@ -1,5 +1,5 @@
 
-export interface Vote {
+export class Vote {
   id?:any;
   questionMark?:any;
   refuse?:any;

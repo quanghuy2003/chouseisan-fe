@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {EventtService} from "../eventt.service";
-import {Eventt} from "../eventt";
+import {EventtService} from "../../service/eventt.service";
+import {Eventt} from "../../model/Eventt";
 
 @Component({
   selector: 'app-find-all-event',
