@@ -7,12 +7,14 @@ import { AddComponent } from './compoment/add/add.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { FindAllEventComponent } from './compoment/find-all-event/find-all-event.component';
+import { UpdateComponent } from './compoment/update/update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
-    FindAllEventComponent
+    FindAllEventComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -13,11 +13,12 @@ export class EventtService {
   constructor(private http: HttpClient) { }
 
   getAllEvent(): Observable<Eventt[]> {
+
     return this.http.get<Eventt[]>(API_URL + '/findAll')
   }
 
   getId(id: string | null): Observable<Eventt> {
-    return this.http.get<Eventt>(API_URL + `/event/${id}`);
+    return this.http.get<Eventt>(API_URL + `/seach/${id}`);
   }
 
   addEvent(eventt: Eventt): Observable<Eventt> {
@@ -26,11 +27,11 @@ export class EventtService {
 
   deleteEvent(id: any): Observable<Eventt> {
     // @ts-ignore
-    return this.http.delete(API_URL + `/delete/${id}`)
+    return this.http.delete(API_URL + `/${id}`)
   }
 
   updateEvent(id: any, eventt: Eventt): Observable<Eventt> {
-    return this.http.put<Eventt>(API_URL + `/update/${id}`, eventt);
+    return this.http.put<Eventt>(API_URL + `/${id}`, eventt);
   }
 }
 
