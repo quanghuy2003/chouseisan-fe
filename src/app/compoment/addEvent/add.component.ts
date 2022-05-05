@@ -4,7 +4,7 @@ import {EventtService} from "../../service/eventt.service";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-  selector: 'app-add',
+  selector: 'app-addEvent',
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
@@ -42,7 +42,7 @@ export class AddComponent implements OnInit {
   //
   // ngOnInit(): void {
   // }
-  // add(){
+  // addEvent(){
   //   const eventt = {
   //     name: this.eventtForm.value.name,
   //     detail: this.eventtForm.value.detail,

@@ -18,7 +18,7 @@ export class EventtService {
   }
 
   getId(id: string | null): Observable<Eventt> {
-    return this.http.get<Eventt>(API_URL + `/seach/${id}`);
+    return this.http.get<Eventt>(API_URL + `/${id}`);
   }
 
   addEvent(eventt: Eventt): Observable<Eventt> {

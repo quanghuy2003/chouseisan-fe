@@ -1,8 +1,10 @@
+import {Eventt} from "./Eventt";
 
 export class Vote {
   id?:any;
-  questionMark?:any;
-  refuse?:any;
-  tick?:any;
-  event?:[Event]
+  schedule?:String;
+  status?:String;
+  comment?:String;
+  // @ts-ignore
+  eventtId: Eventt
 }

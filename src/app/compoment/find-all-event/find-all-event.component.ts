@@ -21,16 +21,10 @@ export class FindAllEventComponent implements OnInit {
       }
     )
   }
-  //  eventts:Eventt[]=[];
-  //
-  // constructor(private eventtService:EventtService) {
-  // }
-  // ngOnInit() {
-  // }
-  // getAll(){
-  //   this.eventtService.getAllEvent().subscribe((res:any)=>{
-  //     this.eventts = res
-  //   })
-  // }
-
+  delete(){
+    // @ts-ignore
+    this.eventtService.deleteEvent(this.eventt.id).subscribe(()=>{
+      alert("xóa thành công")
+    })
+  }
 }

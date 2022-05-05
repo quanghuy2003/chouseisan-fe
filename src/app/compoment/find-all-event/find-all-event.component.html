@@ -11,14 +11,9 @@
     <th>{{e.name}}</th>
     <th>{{e.detail}}</th>
     <th>{{e.time}}</th>
-    <a href="http://localhost:4200/edit">edit</a>
+    <a class="nav-link" [routerLink]="['edit']">edit</a>
+    <button  (click)="delete()">xóa</button>
   </tr>
   </tbody>
 </table>
-<!--<div id="1" class="item new col-md-4" *ngFor="let eventt of eventts">-->
-<!--    <div class="featured-item">-->
-<!--      <h4>{{eventt.name}}</h4>-->
-<!--      <h6>${{eventt.detail}}</h6>-->
-<!--      <h6>${{eventt.time}}</h6>-->
-<!--    </div>-->
-<!--</div>-->
+

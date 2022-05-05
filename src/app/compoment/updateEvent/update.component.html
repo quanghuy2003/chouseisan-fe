@@ -1,0 +1,58 @@
+<!--<form [formGroup]="eventForm" (ngSubmit)="updateEventProfile()">-->
+<!--  <div class="text-left">-->
+<!--    <label>Name</label>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <input type="text" class="form-control" formControlName="name" id="exampleInput Name"-->
+<!--           placeholder="name" value="{{eventt.name}}">-->
+<!--  </div>-->
+<!--  <div class="text-left">-->
+<!--    <label>Detail</label>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <input type="text" class="form-control" formControlName="name" id="exampleInput Detail"-->
+<!--           placeholder="name" value="{{eventt.detail}}">-->
+<!--  </div>-->
+<!--  <div class="text-left">-->
+<!--    <label>Time</label>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <input type="datetime-local" class="form-control" formControlName="name" id="exampleInput Time"-->
+<!--           placeholder="name" value="{{eventt.time}}">-->
+<!--  </div>-->
+<!--  <button type="submit" class="btn btn-outline-primary">cập nhật</button>-->
+<!--</form>-->
+<!--&lt;!&ndash;<button type="button" class="btn btn-outline-primary" (click)="delete()">xóa</button>&ndash;&gt;-->
+
+
+
+<form [formGroup]="eventForm" (ngSubmit)="updateEventProfile()">
+  <div class="text-left">
+    <label>name</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="name" id="exampleInput name"
+           placeholder="name">
+  </div>
+
+
+  <div class="text-left">
+    <label>detail</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="detail" id="exampleInput Detail"
+           placeholder="name">
+  </div>
+
+
+  <div class="text-left">
+    <label>time</label>
+  </div>
+  <div class="form-group">
+    <input type="datetime-local" class="form-control" formControlName="time" id="exampleInput Time"
+           placeholder="name">
+  </div>
+
+  <button type="submit" class="btn btn-outline-primary">cập nhật</button>
+  <!--  <button type="button" class="btn btn-outline-primary" (click)="delete()">xóa</button>-->
+</form>

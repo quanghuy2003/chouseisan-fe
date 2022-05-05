@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FindAllEventComponent} from "./compoment/find-all-event/find-all-event.component";
-import {AddComponent} from "./compoment/add/add.component";
-import {UpdateComponent} from "./compoment/update/update.component";
+import {AddComponent} from "./compoment/addEvent/add.component";
+import {UpdateComponent} from "./compoment/updateEvent/update.component";
+import {FindVoteComponent} from "./compoment/find-vote/find-vote.component";
 
 const routes: Routes = [
   {
-    path:'find',
+    path:'findEvent',
     component: FindAllEventComponent
   },{
-    path:'add',
+    path:'addEvent',
     component: AddComponent
   },{
-    path:'edit',
+    path:'editEvent',
     component: UpdateComponent
+  },{
+    path:'findVote',
+    component: FindVoteComponent
   }
 ];
 
