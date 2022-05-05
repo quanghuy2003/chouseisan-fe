@@ -14,6 +14,15 @@ export class VoteService {
   getAllVote(): Observable<Vote[]> {
     return this.http.get<Vote[]>(API_URL + '/findAll')
   }
+  getAllSchedule(): Observable<Vote[]> {
+    return this.http.get<Vote[]>(API_URL + '/findSchedule')
+  }
+  getAllStatus(): Observable<Vote[]> {
+    return this.http.get<Vote[]>(API_URL + '/findStatus')
+  }
+  getAllComment(): Observable<Vote[]> {
+    return this.http.get<Vote[]>(API_URL + '/findComment')
+  }
 
   addVote(vote: Vote): Observable<Vote> {
     return this.http.post<Vote>(API_URL + '/add', vote);

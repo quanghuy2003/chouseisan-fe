@@ -9,15 +9,20 @@ import {VoteService} from "../../service/vote.service";
 })
 export class FindVoteComponent implements OnInit {
   votes: Vote[]=[]
+  votess: Vote[]=[]
+  votesss: Vote[]=[]
   constructor(private voteService : VoteService) { }
 
   ngOnInit(): void {
-    this.voteService.getAllVote().subscribe(result =>{
+    this.voteService.getAllSchedule().subscribe(result =>{
         // @ts-ignore
         this.votes=result;
-        console.log(result);
-      },error => {
-        console.log(error)
+        this.voteService.getAllStatus().subscribe(rs=>{
+          this.votess=rs;
+          this.voteService.getAllComment().subscribe(rss=>{
+            this.votesss=rss
+          })
+        })
       }
     )
   }
