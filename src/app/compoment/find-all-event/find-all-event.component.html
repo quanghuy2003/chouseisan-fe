@@ -11,7 +11,7 @@
     <th>{{e.name}}</th>
     <th>{{e.detail}}</th>
     <th>{{e.time}}</th>
-    <a class="nav-link" [routerLink]="['edit']">edit</a>
+    <button routerLink="/editEvent">edit</button>
     <button  (click)="delete()">xóa</button>
   </tr>
   </tbody>
