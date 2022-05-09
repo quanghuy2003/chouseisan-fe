@@ -23,7 +23,7 @@ export class FindAllEventComponent implements OnInit {
   }
   delete(){
     // @ts-ignore
-    this.eventtService.deleteEvent(this.eventt.id).subscribe(()=>{
+    this.eventtService.deleteEvent(this.eventts.id).subscribe(()=>{
       alert("xóa thành công")
     })
   }

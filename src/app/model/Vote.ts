@@ -1,10 +1,10 @@
 import {Eventt} from "./Eventt";
 
 export class Vote {
-  id?:any;
-  schedule?:String;
-  status?:String;
-  comment?:String;
+  id?:string;
+  schedule?:string;
+  status?:string;
+  comment?:string;
   // @ts-ignore
   eventtId: Eventt
 }

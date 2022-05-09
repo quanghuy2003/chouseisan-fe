@@ -1,6 +1,6 @@
 
 export class Eventt {
-  id?: any;
+  id?: string;
   name?:string;
   detail?:string;
   time?: string;

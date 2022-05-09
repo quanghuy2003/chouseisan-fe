@@ -13,7 +13,7 @@ const routes: Routes = [
     path:'addEvent',
     component: AddComponent
   },{
-    path:'editEvent',
+    path:'editEvent/:id',
     component: UpdateComponent
   },{
     path:'findVote',
