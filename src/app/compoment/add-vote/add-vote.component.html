@@ -1,0 +1,23 @@
+<h1> CREATE A NEW VOTE </h1>
+
+<form [formGroup]="voteForm"(ngSubmit)="add()">
+    <tr>
+      <td> NAME: </td>
+      <td><input type="text" formControlName="schedule"></td>
+    </tr>
+    <tr>
+      <td>STATUS:</td>
+      <td *ngFor="let t of tick">
+        <div (click)="setStatus(t)">{{ t }}</div>
+      </td>
+    </tr>
+    <tr>
+      <td>COMMENT</td>
+      <td><input type="text" formControlName="comment"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button >CREATE NEW</button></td>
+    </tr>
+</form>
+

@@ -50,4 +50,8 @@ export class VoteService {
     return this.http.get<Vote[]>(API_URL + '/findAllRefuse')
   }
 
+  getAllVoteEvent(): Observable<Vote[]> {
+    return this.http.get<Vote[]>(API_URL + '/findEventId')
+  }
+
 }

@@ -1,5 +1,5 @@
 <table class="table">
-  <tbody>
+  <body>
   <tr>
     <td>schedule</td>
     <td *ngFor="let v of votes">
@@ -13,7 +13,7 @@
 <!--    </td>-->
 <!--  </tr>-->
   <tr>
-     <td>comment</td>
+     <td>status</td>
     <td  *ngFor="let v of votess">
     <p>{{v}}</p>
     </td>
@@ -24,6 +24,6 @@
     <p>{{v}}</p>
     </td>
   </tr>
-
-  </tbody>
+  <button [routerLink]="['/addVote/']">VOTE</button>
+  </body>
 </table>

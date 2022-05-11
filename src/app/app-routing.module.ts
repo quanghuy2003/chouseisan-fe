@@ -4,6 +4,8 @@ import {FindAllEventComponent} from "./compoment/find-all-event/find-all-event.c
 import {AddComponent} from "./compoment/addEvent/add.component";
 import {UpdateComponent} from "./compoment/updateEvent/update.component";
 import {FindVoteComponent} from "./compoment/find-vote/find-vote.component";
+import {VoteEventComponent} from "./compoment/vote-event/vote-event.component";
+import {AddVoteComponent} from "./compoment/add-vote/add-vote.component";
 
 const routes: Routes = [
   {
@@ -18,6 +20,12 @@ const routes: Routes = [
   },{
     path:'findVote',
     component: FindVoteComponent
+  },{
+    path:'findVoteEvent',
+    component: VoteEventComponent
+  },{
+    path:'addVote/:id',
+    component: AddVoteComponent
   }
 ];
 

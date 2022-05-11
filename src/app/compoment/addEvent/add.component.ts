@@ -33,22 +33,4 @@ export class AddComponent implements OnInit {
       alert("thêm thành công")
     })
   }
-  // eventtForm = new FormGroup({
-  //   name : new FormControl("",[Validators.required]),
-  //   detail : new FormControl("",[Validators.required]),
-  //   time : new FormControl("",[Validators.required]),
-  // })
-  // constructor(private eventtService : EventtService) { }
-  //
-  // ngOnInit(): void {
-  // }
-  // addEvent(){
-  //   const eventt = {
-  //     name: this.eventtForm.value.name,
-  //     detail: this.eventtForm.value.detail,
-  //     time: this.eventtForm.value.time
-  //   } // @ts-ignore
-  //   this.eventtService.addEvent(eventt)
-  //   console.log("hí")
-  // }
 }

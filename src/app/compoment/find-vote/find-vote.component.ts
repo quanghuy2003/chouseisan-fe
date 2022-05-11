@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Vote} from "../../model/Vote";
 import {VoteService} from "../../service/vote.service";
+import {EventtService} from "../../service/eventt.service";
 
 @Component({
   selector: 'app-find-vote',
@@ -9,9 +10,11 @@ import {VoteService} from "../../service/vote.service";
 })
 export class FindVoteComponent implements OnInit {
   votes: Vote[]=[]
+  events: Event[]=[]
   votess: any[]=[]
   votesss: Vote[]=[]
-  constructor(private voteService : VoteService) { }
+  constructor(private voteService : VoteService,
+              private eventtService : EventtService) { }
 
   ngOnInit(): void {
     this.voteService.getAllSchedule().subscribe(result =>{
@@ -71,6 +74,10 @@ export class FindVoteComponent implements OnInit {
           // ]
           this.voteService.getAllComment().subscribe(rss=>{
             this.votesss=rss
+            this.eventtService.getAllEvent().subscribe(rs=>{
+              // @ts-ignore
+              this.events=rs
+            })
           })
         })
       }
