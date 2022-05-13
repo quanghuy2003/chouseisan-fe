@@ -37,21 +37,10 @@ export class VoteService {
     return this.http.put<Vote>(API_URL + `/update/${id}`, vote);
   }
 
-
-  getAllVoteTick(): Observable<Vote[]> {
-    return this.http.get<Vote[]>(API_URL + '/findAllTick')
-  }
-
-  getAllVoteQuestionMark(): Observable<Vote[]> {
-    return this.http.get<Vote[]>(API_URL + '/findAllQuestionMark')
-  }
-
-  getAllVoteRefuse(): Observable<Vote[]> {
-    return this.http.get<Vote[]>(API_URL + '/findAllRefuse')
-  }
-
   getAllVoteEvent(): Observable<Vote[]> {
-    return this.http.get<Vote[]>(API_URL + '/findEventId')
+    return this.http.get<Vote[]>  (API_URL + '/findAllEvent')
   }
-
+  getId(id: string | null): Observable<Vote> {
+    return this.http.get<Vote>(API_URL + `/${id}`);
+  }
 }

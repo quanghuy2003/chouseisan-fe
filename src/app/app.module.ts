@@ -9,8 +9,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { FindAllEventComponent } from './compoment/find-all-event/find-all-event.component';
 import { UpdateComponent } from './compoment/updateEvent/update.component';
 import { FindVoteComponent } from './compoment/find-vote/find-vote.component';
-import { VoteEventComponent } from './compoment/vote-event/vote-event.component';
 import { AddVoteComponent } from './compoment/add-vote/add-vote.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { AddVoteComponent } from './compoment/add-vote/add-vote.component';
     FindAllEventComponent,
     UpdateComponent,
     FindVoteComponent,
-    VoteEventComponent,
-    AddVoteComponent
+    AddVoteComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

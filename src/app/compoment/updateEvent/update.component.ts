@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Eventt} from "../../model/Eventt";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -20,7 +20,8 @@ export class UpdateComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
               private eventtService: EventtService,
-              private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(param => {
@@ -46,4 +47,5 @@ export class UpdateComponent implements OnInit {
       alert("Sửa thành công!")
       this.router.navigate(["/findEvent"])
     })
-  }}
+  }
+}

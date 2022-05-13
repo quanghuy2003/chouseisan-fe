@@ -12,7 +12,8 @@
     <th>{{e.detail}}</th>
     <th>{{e.time}}</th>
     <button [routerLink]="['/editEvent',e.id]">edit</button>
-    <button  (click)="delete()">xóa</button>
+<!--    <button [routerLink]="['/findVote']" [queryParams]="{id: e.id}">vote</button>-->
+<!--    <button  (click)="delete()">xóa</button>-->
   </tr>
   </tbody>
 </table>
